@@ -4,12 +4,12 @@ This library provides a nice and convenient way for GO application developers to
 You install the library by:
 
 ```shell
-$ go get github.com/echsylon/go-log
+go get github.com/echsylon/go-log
 ```
 
 ## Key features
 
-* Option to log in all Unix Syslog categories (`EMERGENCY`, `ALERT`, `CRITICAL`, `ERROR`, `WARNING`, `NOTICE`, `INFORMATIONAL`, `DEBUG`) + `TRACE`.
+* Option to log in all Unix Syslog categories (`EMERGENCY`, `ALERT`, `CRITICAL`, `ERROR`, `WARNING`, `NOTICE`, `INFORMATIONAL`, `DEBUG`) and additionally also  `TRACE`.
 * Configurable log details (supports injecting custom details).
 * Color coded output.
 
@@ -34,7 +34,7 @@ func main() {
 	log.SetLogColumns(
 		customLogColumn,
 		log.LOG_COLUMN_DATETIME,
-        log.LOG_COLUMN_SOURCE,
+		log.LOG_COLUMN_SOURCE,
 		log.LOG_COLUMN_LEVEL,
 	)
 
